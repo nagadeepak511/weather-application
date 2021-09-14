@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Weather application</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/3e643419a6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="search-container" class='container'>
+            <h1 id="search-heading">Weather application</h1>
+            <h4 id="search-sub-heading">Get current weather information of any city</h4>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-10 col-sm-9 col-xs-8">
+                        <input id="search-by-city" class="form-control" placeholder="Search by city name">
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4">
+                        <button onclick="callFunc()" class='btn btn-lg btn-primary'><i class="glyphicon glyphicon-search"></i> Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-background">
+            <div id="content-container">
+                <div id='content-header'>
+                    <h1 id="content-city-name">Timisaro</h1>
+                </div>
+                <img id="content-icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+                <h1 id="content-temperature">27<span id="content-temp-unit">&deg;C</span><span id="content-temp-min">MIN: 26&deg;C</span></h1>
+                <div id="content-details-container">
+                    <div class="content-details">
+                        <i class="fas fa-cloud"></i>
+                        <span class="content-details-heading">93%</span>
+                    </div>
+                    <div class="content-details">
+                        <i class="fas fa-wind"></i>
+                        <span class="content-details-heading">5km/h</span>
+                    </div>
+                    <div class="content-details">
+                        <i class="fas fa-tint"></i>
+                        <span class="content-details-heading">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="typing-animation">
+                NagaDeepak
+            </div>
+        </div>
+        <script>
+            window.onload = onStart;
+        </script>
+    </body>
+</html>
